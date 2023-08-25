@@ -156,3 +156,5 @@ window.onload = function () {
         login();
     }
 }
+
+console.log("Hello, world!")
