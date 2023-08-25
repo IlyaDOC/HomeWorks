@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWorks</title>
+    <link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="header_title">home<span class="header_title_span">W</span>orks</h1>
+    </div>
+</header>
+<section class="main">
+    <div class="container">
+        <div class="left_side">
+            <div class="main_title">
+                Get your free account
+            </div>
+            <div class="main_des">
+                Try homeWorks BUSINESS free for 15 days. Downgrade to Basic (Free Forever)
+                anytime.
+            </div>
+            <div class="form">
+                <form action="#" method="post">
+                    <label for="name" id="label_name">
+                        <span class="input_labels">Full Name</span>
+                        <input type="text" name="name" id="name" class="form_input">
+                    </label>
+                    <label for="username">
+                        <span class="input_labels">Your username</span>
+                        <input type="text" name="username" id="username" class="form_input">
+                    </label>
+                    <label for="email" id="label_email">
+                        <span class="input_labels">E-mail</span>
+                        <input type="email" name="email" id="email" class="form_input" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                    </label>
+                    <label for="password">
+                        <span class="input_labels">Password</span>
+                        <input type="password" name="password" id="password" class="form_input">
+                    </label>
+                    <label for="repeat_password" id="label_repeat">
+                        <span class="input_labels">Repeat Password</span>
+                        <input type="password" name="repeat_password" id="repeat_password" class="form_input">
+                    </label>
+                    <label for="agree" class="agree" id="label_agree">
+                        <input type="checkbox" name="agree" id="agree">
+                        <span class="input_agree">Agree to our Terms of Service and Privacy Statement</span>
+                    </label>
+                    <button type="button" class="btn" id="submit_btn">Sign Up</button>
+                    <a href="#" id="already_account">Already have an account?</a>
+                </form>
+            </div>
+        </div>
+        <div class="right_side">
+            <img src="images/image.png" alt="Rocket">
+        </div>
+        <div class="popup" id="popup">
+            <div class="message" id="message">
+                <p>На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию</p>
+                <button type="button" id="popup_button" class="popup_button">OK</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script src="scripts/script.js"></script>
+</body>
+</html>
