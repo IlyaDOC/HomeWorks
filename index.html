@@ -23,23 +23,23 @@
             </div>
             <div class="form">
                 <form action="#" method="post">
-                    <label for="name" id="label_name">
+                    <label for="name" id="label_name" class="inputParent">
                         <span class="input_labels">Full Name</span>
-                        <input type="text" name="name" id="name" class="form_input">
+                        <input type="text" name="name" id="name" class="form_input" required>
                     </label>
-                    <label for="username">
+                    <label for="username" class="inputParent" id="label_username">
                         <span class="input_labels">Your username</span>
-                        <input type="text" name="username" id="username" class="form_input">
+                        <input type="text" name="username" id="username" class="form_input" required>
                     </label>
-                    <label for="email" id="label_email">
+                    <label for="email" id="label_email" class="inputParent">
                         <span class="input_labels">E-mail</span>
-                        <input type="email" name="email" id="email" class="form_input" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                        <input type="email" name="email" id="email" class="form_input" required>
                     </label>
-                    <label for="password">
+                    <label for="password" class="inputParent" id="label_password">
                         <span class="input_labels">Password</span>
                         <input type="password" name="password" id="password" class="form_input">
                     </label>
-                    <label for="repeat_password" id="label_repeat">
+                    <label for="repeat_password" id="label_repeat" class="inputParent">
                         <span class="input_labels">Repeat Password</span>
                         <input type="password" name="repeat_password" id="repeat_password" class="form_input">
                     </label>
@@ -60,7 +60,6 @@
                 <p>На вашу почту выслана ссылка, перейдите по ней, чтобы завершить регистрацию</p>
                 <button type="button" id="popup_button" class="popup_button">OK</button>
             </div>
-
         </div>
     </div>
 </section>
